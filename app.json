@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "MeetPuppies",
+    "slug": "MeetPuppies",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tkajesse.MeetPuppies"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.tkajesse.MeetPuppies"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app needs access to your camera."
+        }
+      ],
+      ["expo-notifications",{"color":"#ffff00"}]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f37965b0-6d1b-426b-b5f4-2c3cd51c8256"
+      }
+    }
+  }
+}
